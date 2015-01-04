@@ -7,8 +7,29 @@
     <body>
       <h1>Angel Montero</h1>
       <p>Hello everyone, welcome to my webpage. Hola, esto es mi pagina web.</p>
-    
-      <script src="http://cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.8/processing.js"></script>
+      <p>Enter your username and password below to enter your Match Maker account.</p>
+      <input id="username" type="text">
+      <input id="password" type="text">
+      <button type="button" onclick="myFunction()">Submit</button>
+
+
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.8/processing.js">
+      function myFunction() {
+    var x, text;
+
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("password").value;
+
+    // If x is Not a Number or less than one or greater than 10
+    if (isNaN(x) || x < 1 || x > 10) {
+        text = "Input not valid";
+    } else {
+        text = "Input OK";
+    }
+    document.getElementById("demo").innerHTML = text;
+    }  
+      </script>
+      
       <img src="http://upload.wikimedia.org/wikipedia/commons/9/91/Winkel_triple_projection_SW.jpg" alt="World" width="1000" height="400">
       
       <p>Interested in programming? Go to the link below:</p>

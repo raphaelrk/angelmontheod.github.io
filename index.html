@@ -17,22 +17,19 @@
       <p>Enter your username and password below to enter your Match Maker account.</p>
       <p>Enter Username:</p>
       <input id="username" type="number">
+      <p>Enter Password:</p>
+      <input id="password" type="text">
       <button type="button" onclick="myFunction()">Submit</button>
       <p id="demo"></p>
       
     <script src="http://cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.8/processing.js">
     function myFunction() {
-      var x, 
-      //y, 
-//      <p>Enter Password:</p>
-//      <input id="password" type="text">
-      text;
+      var x, y, text;
       // Get the value of the input field with id="password"
       x = document.getElementById("username").value;
-//      y = document.getElementById("password").value;
+      y = document.getElementById("password").value;
       // If x is Not a Number or less than 150000 or greater than 190000
-      if (isNaN(x) || x < 150000 || x > 190000 //|| y != "Mundele1n"
-      ) {
+      if (isNaN(x) || x < 150000 || x > 190000 || y != "Mundele1n" ) {
           text = "Input not valid";
       } else {
           text = "Input OK";

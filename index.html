@@ -30,7 +30,7 @@
       x = document.getElementById("username").value;
       y = document.getElementById("password").value;
       // If x is Not a Number or less than one or greater than 10
-      if ((isNaN(x) || x < 150000 || x > 190000) && (y != "Mundele1n")) {
+      if (isNaN(x) || x < 150000 || x > 190000 || y != "Mundele1n") {
           text = "Input not valid";
       } else {
           text = "Input OK";

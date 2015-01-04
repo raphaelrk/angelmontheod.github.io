@@ -7,6 +7,13 @@
     <body>
       <h1>Angel Montero</h1>
       <p>Hello everyone, welcome to my webpage. Hola, esto es mi pagina web.</p>
+      <img src="http://upload.wikimedia.org/wikipedia/commons/9/91/Winkel_triple_projection_SW.jpg" alt="World" width="1000" height="400">
+      
+      <p>Interested in programming? Go to the link below:</p>
+      <a href="http://www.mhsbyte.org/">Learn about programming!</a>
+      <p>Interested in reading books? Go to the link below:</p>
+      <a href="http://www.padlet.com/ewillisd120/dpu832j4dolm">Read some books!</a>
+      
       <p>Enter your username and password below to enter your Match Maker account.</p>
       <p>Enter Username:</p>
       <input id="username" type="number">
@@ -14,29 +21,23 @@
       <input id="password" type="text">
       <button type="button" onclick="myFunction()">Submit</button>
       <p id="demo"></p>
-
+      
     <script src="http://cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.8/processing.js">
     function myFunction() {
-    var x, number;
-    var y, text;
-    // Get the value of the input field with id="password"
-    x = document.getElementById("username").value;
-    y = document.getElementById("password").value;
-    // If x is Not a Number or less than one or greater than 10
-    if (isNaN(x) || x < 150000 || x > 190000) && (y != Mundele1n) {
-        text = "Input not valid";
-    } else {
-        text = "Input OK";
-    }  
+      var x, number;
+      var y, text;
+      // Get the value of the input field with id="password"
+      x = document.getElementById("username").value;
+      y = document.getElementById("password").value;
+      // If x is Not a Number or less than one or greater than 10
+      if (isNaN(x) || x < 150000 || x > 190000) && (y != Mundele1n) {
+          text = "Input not valid";
+      } else {
+          text = "Input OK";
+      }  
     document.getElementById("demo").innerHTML = text;
+    }
     </script>
-      
-      <img src="http://upload.wikimedia.org/wikipedia/commons/9/91/Winkel_triple_projection_SW.jpg" alt="World" width="1000" height="400">
-      
-      <p>Interested in programming? Go to the link below:</p>
-      <a href="http://www.mhsbyte.org/">Learn about programming!</a>
-      <p>Interested in reading books? Go to the link below:</p>
-      <a href="http://www.padlet.com/ewillisd120/dpu832j4dolm">Read some books!</a>
       
     </body>
   </html>

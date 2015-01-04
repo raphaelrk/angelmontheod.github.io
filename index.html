@@ -13,7 +13,7 @@
       <p>Enter Password:</p>
       <input id="password" type="text">
       <button type="button" onclick="myFunction()">Submit</button>
-
+      <p id="demo"></p>
 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.8/processing.js">
     function myFunction() {
@@ -28,6 +28,7 @@
     } else {
         text = "Input OK";
     }  
+    document.getElementById("demo").innerHTML = text;
     </script>
       
       <img src="http://upload.wikimedia.org/wikipedia/commons/9/91/Winkel_triple_projection_SW.jpg" alt="World" width="1000" height="400">
